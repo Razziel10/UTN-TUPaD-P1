@@ -66,3 +66,79 @@ else:
     
 if num == numero_aleatorio:
     print(f"GANASTE. Fueron necesarios {conteo} intentos")
+
+
+#6) Desarrolla un programa que imprima en pantalla todos los números pares comprendidos
+#entre 0 y 100, en orden decreciente.
+
+
+for i in range(100,-2,-2):
+    print(i)
+
+
+
+#7) Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un
+#número entero positivo indicado por el usuario.
+
+num = int(input("Indicar número entero: "))
+suma = 0
+
+for i in range(0,num+1):
+    suma += i 
+    
+print(f"La suma es: {suma}")
+
+
+#8) Escribe un programa que permita al usuario ingresar 100 números enteros. Luego, el
+#programa debe indicar cuántos de estos números son pares, cuántos son impares, cuántos son
+#negativos y cuántos son positivos. (Nota: para probar el programa puedes usar una cantidad
+#menor, pero debe estar preparado para procesar 100 números con un solo cambio).
+
+
+pares = 0
+impares = 0
+positivos = 0
+negativos = 0
+
+for i in range(100):
+    num = int(input("Ingresar número entero: "))
+    if num % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+    if num > 0:
+        positivos += 1
+    elif num < 0:
+        negativos += 1
+
+print(f"Pares: {pares}")
+print(f"Impares: {impares}")
+print(f"Positivos: {positivos}")
+print(f"Negativos: {negativos}")
+
+
+
+#9) Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la
+#media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe
+#poder procesar 100 números cambiando solo un valor).
+
+suma = 0
+cantidad = 0
+
+for i in range(5):
+    num = int(input("Ingresar número entero: "))
+    suma += num
+    cantidad += 1
+
+media = suma / cantidad
+print(f"La media es: {media}")
+
+
+
+#10) Escribe un programa que invierta el orden de los dígitos de un número ingresado por el
+#usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.
+
+num = input("Ingresar número: ")
+invertido = num[::-1]
+print(f"Número invertido: {invertido}")
+
