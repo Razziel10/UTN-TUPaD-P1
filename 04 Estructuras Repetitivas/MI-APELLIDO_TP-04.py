@@ -55,11 +55,11 @@ import random
 numero_aleatorio = random.randint(0, 9)
 
 num = int(input("Adivinar número entero (Ingresar valores entre 0 y 9 para no perder): "))
-conteo = 0
+conteo = 1
 
 if num >= 0 and num < 10:
     while num != numero_aleatorio:
-        conteo += conteo + 1
+        conteo += 1
         num = int(input("Adivinar número entero (Ingresar valores entre 0 y 9): "))
 else:
     print("El número esta por fuera del rango. Fin del juego")
